@@ -11,3 +11,12 @@
 *.lai
 *.la
 *.a
+/SomniumTest/Debug/*.tlog
+/SomniumTest/Debug/*.lastbuildstate
+/SomniumTest/Debug/*.log
+/SomniumTest/Debug/*.obj
+/SomniumTest/Debug/*.idb
+/SomniumTest/Debug/*.pdb
+*.log
+*.sdf
+/SomniumTest/log.txt

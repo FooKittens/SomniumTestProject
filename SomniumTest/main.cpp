@@ -9,8 +9,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
             char *cmd, int cmdline)
 {
   Engine *engine = Engine::GetInstance();
-  engine->InitializeSystem(SubSystemWindows);
-  engine->Run();
-
+  if(engine->InitializeSystem(SubSystemWindows) &&
+     engine->InitializeSystem(SubSystemGraphics))
+  {
+    engine->Run();
+  }
+  
   return 0;
-}
+} 

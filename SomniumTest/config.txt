@@ -1,13 +1,14 @@
 --- SomniumEngine Config ---
 
-LogFile = "Engine.log"
-ErrorFile = "Errors.log"
 ResourceScriptFile = "Resources.txt"
 
 --- Window Settings ---
 ResolutionWidth = 800
 ResolutionHeight = 600
-Fullscreen = 1
+SampleCount = 1
+SampleQuality = 0
+VerticalSync = 0
+Fullscreen = 0
 WindowTitle = "SomniumEngine Test Project"
 
 
