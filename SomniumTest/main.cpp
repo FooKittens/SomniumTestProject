@@ -1,5 +1,3 @@
-
-
 #include "SomniumEngine.h"
 #include <Windows.h>
 
@@ -13,6 +11,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
      engine->InitializeSystem(SubSystemGraphics))
   {
     engine->Run();
+  }
+  else
+  {
+    MessageBoxW(NULL, L"SomniumEngine has exited with an error!"
+      L"\nPlease see Errors.log and Engine.log for more information!", L"ERROR",
+      MB_OK | MB_ICONERROR);
   }
   
   return 0;
