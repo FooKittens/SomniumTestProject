@@ -8,14 +8,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 {
   Engine *engine = Engine::GetInstance();
   if(engine->InitializeSystem(SubSystemWindows) &&
-     engine->InitializeSystem(SubSystemGraphics))
-  {
-    engine->Run();
-  }
+     engine->InitializeSystem(SubSystemGraphics) && engine->Run()) ;
   else
   {
-    MessageBoxW(NULL, L"SomniumEngine has exited with an error!"
-      L"\nPlease see Errors.log and Engine.log for more information!", L"ERROR",
+    MessageBox(NULL, "SomniumEngine has exited with an error!"
+      "\nPlease see Errors.log and Engine.log for more information!", "ERROR",
       MB_OK | MB_ICONERROR);
   }
   
