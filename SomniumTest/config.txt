@@ -3,8 +3,8 @@
 ResourceScriptFile = "Resources.txt"
 
 --- Window Settings ---
-ResolutionWidth = 800
-ResolutionHeight = 600
+ResolutionWidth = 1024
+ResolutionHeight = 800
 SampleCount = 1
 SampleQuality = 0
 VerticalSync = 0
